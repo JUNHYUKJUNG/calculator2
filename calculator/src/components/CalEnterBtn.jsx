@@ -18,7 +18,7 @@ const CalEnterBtn = ({
         setResult(String(Number(temp) * Number(result)));
         break;
       case "/":
-        setResult(String(Number(temp) / Number(result)));
+        setResult(String(parseInt(Number(temp) / Number(result), 10)));
         break;
     }
 
