@@ -11,8 +11,14 @@ const App = () => {
   const [operator, setOperator] = useState();
 
   return (
-    <main className="bg-pink-200 min-h-screen flex justify-center items-center">
-      <div className="bg-gray-300 px-8 py-12 rounded-lg shadow-md">
+    <main className="bg-gray-200 min-h-screen flex justify-center items-center">
+      <div className="bg-gray-300 px-8 py-12 rounded-lg shadow-lg">
+        <div className="mb-12 flex justify-end">
+          <div className="border-4 border-gray-500 bg-gray-600 px-1 w-7 h-8"></div>
+          <div className="border-4 border-gray-500 bg-gray-600 px-1 w-7 h-8"></div>
+          <div className="border-4 border-gray-500 bg-gray-600 px-1 w-7 h-8"></div>
+          <div className="border-4 border-gray-500 bg-gray-600 px-1 w-7 h-8"></div>
+        </div>
         <CalInput result={result} setResult={setResult} />
         <div className="grid grid-cols-4 mt-8 gap-4">
           <CalNumberBtn result={result} setResult={setResult} number="1" />
